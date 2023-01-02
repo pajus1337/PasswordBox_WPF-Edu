@@ -1,0 +1,16 @@
+﻿<Window x:Class="PasswordBox_WPF_Edu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordBox_WPF_Edu"
+        mc:Ignorable="d"
+        Title="Password Box Window" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <Label>User Name : </Label>
+        <TextBox Name="tb_userName"/>
+        <Label>Password : </Label>
+        <PasswordBox PasswordChar="X" MaxLength="8"  Name="tb_userPassword" />
+        <Button Click="Button_Click" Content="Log In" Margin="5"/>
+    </StackPanel>
+</Window>
